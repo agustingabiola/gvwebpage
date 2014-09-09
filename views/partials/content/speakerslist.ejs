@@ -14,7 +14,11 @@
 						<img class="speaker" src="/images/persons/<%= item.shortname %>_tn.jpg" alt="Photo of <%= item.name %>">
 					</p>
 					<% if (page === 'Famiglia') { %>
-						<p><%- item.summary %> </p>
+						<p><%- item.summary %> 
+							<a href="/famiglia/<%= item.shortname %>">
+								[Más]
+							</a>
+						</p>
 					<%} else {%>
 						<p> <%- item.description %> </p>
 					<% } %>

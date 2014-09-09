@@ -1,0 +1,12 @@
+<article class="nextmeeting">
+	<h3>Eventos</h3>
+	<p>
+	<img src="<%= appdata.meeting.where.img %>" alt="Lugar del evento"> El siguiente evento será el 
+	<%= appdata.meeting.date %>, de <%= appdata.meeting.time %> en 
+	<%= appdata.meeting.where.name %>. <br> Dirección: <%= appdata.meeting.where.address %>
+	</p>
+	<p>
+		Para estar atento a cualquier cambio, visítanos en las redes sociales:
+		<% include socialmedia.ejs %>
+	</p>
+</article>

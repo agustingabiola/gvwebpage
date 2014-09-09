@@ -1,0 +1,11 @@
+<article class="artworklist">
+	<h3>Fotos de eventos</h3>
+	<p>Estas son algunas de las fotos que se han obtenido de los eventos. Buscate!</p>
+	<div class="pixgrid">
+		<% if (artwork.length > 0) { %>
+			<% for (i=0; i< artwork.length; i++) { %>
+				<img src="/images/place/<%= artwork[i] %>" alt="ArtWork <%= i %>">
+			<% } %>
+		<% } %>
+	</div>
+</article>

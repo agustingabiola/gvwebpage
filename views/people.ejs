@@ -5,10 +5,13 @@
     <% include partials/template/header.ejs %>
 	<section class="layout">
 		<div class="primary">
+			<% if (page === 'Conceptos') { %>
+				<% include partials/content/intro.ejs %>
+			<% } %>
 			<% include partials/content/speakerslist.ejs %>
 		</div>
 		<aside class"secondary">
-			<% include partials/content/nextmeeting.ejs %>
+			<% include partials/content/getbusy.ejs %>
 		</aside>
 	</section>
 	<% include partials/template/footer.ejs %>

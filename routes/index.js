@@ -16,23 +16,25 @@ router.get('/', function(req, res) {
 });
 
 /* GET famiglia page. */
-router.get('/famiglia', function(req, res) {
+router.get('/conceptos', function(req, res) {
   var myArtWork = [];
   var myPeople = [];
   myPeople = appdata.speakers;
+  var intro = appdata.introduccion;
   appdata.speakers.forEach (function (item) {
 	myArtWork = myArtWork.concat (item.artwork);
   });
   res.render('people', { 
-	title: 'Los Tani-Famiglia',
+	title: 'Los Tani-Conceptos',
 	artwork: myArtWork,
 	people: myPeople,
-	page: 'Famiglia'
+	page: 'Conceptos',
+	introduccion: intro
   });
 });
 
 /* GET ONE famiglia page. */
-router.get('/famiglia/:speakerid', function(req, res) {
+router.get('/conceptos/:speakerid', function(req, res) {
   var myArtWork = [];
   var myPeople = [];
   
@@ -43,10 +45,10 @@ router.get('/famiglia/:speakerid', function(req, res) {
 	}
   });
   res.render('people', { 
-	title: 'Los Tani-Famiglia',
+	title: 'Los Tani-Conceptos',
 	artwork: myArtWork,
 	people: myPeople,
-	page: 'Famiglia Detail'
+	page: 'Conceptos Detail'
   });
 });
 

@@ -2,7 +2,7 @@ var pixGrid = function() {
 
   //Selecting our node
   var url = document.URL;
-  if (url.indexOf("famiglia") === -1){
+  if (url.indexOf("conceptos") === -1){
 	var myNode = document.querySelector('.pixgrid');
   } else {
 	var myNode = document.querySelector('.speakers');

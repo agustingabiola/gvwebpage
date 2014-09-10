@@ -3,19 +3,15 @@
 		<div class="speakers">
 			<% people.forEach(function (item) {%>
 				<article class="artist group">
-					<h3> <%= item.shortname %>
-						<span class="small">
-							como <a href="/famiglia/<%= item.shortname %>">
+					<h4>
 								<%= item.name %>
-							</a>
-						</span>
-					</h3>
+					</h4>
 					<p>
 						<img class="speaker" src="/images/persons/<%= item.shortname %>_tn.jpg" alt="Photo of <%= item.name %>">
 					</p>
-					<% if (page === 'Famiglia') { %>
+					<% if (page === 'Conceptos') { %>
 						<p><%- item.summary %> 
-							<a href="/famiglia/<%= item.shortname %>">
+							<a href="/conceptos/<%= item.shortname %>">
 								[Más]
 							</a>
 						</p>

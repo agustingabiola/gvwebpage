@@ -1,3 +1,5 @@
+//este script agranda aquellas imagenes que tienen un thumnail, quitandoles el _tn y buscando la imagen que le corresponde en grande
+//modificado tambien para agrandar los uploads
 var pixGrid = function() { 
 
   //Selecting our node
@@ -32,7 +34,11 @@ var pixGrid = function() {
       var imageSrc = e.target.src;
       var largeImage = document.createElement('img');
       largeImage.id = 'largeImage';
-      largeImage.src = imageSrc.substr(0, imageSrc.length-7) + '.jpg';
+	  if (url.indexOf("upload") != -1){
+		largeImage.src = imageSrc;
+	  }else {
+		largeImage.src = imageSrc.substr(0, imageSrc.length-7) + '.jpg';
+	  }
       largeImage.style.display = 'block';
       largeImage.style.position = 'absolute';
       

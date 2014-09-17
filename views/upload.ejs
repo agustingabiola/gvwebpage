@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <% include partials/template/head.ejs %>
+  <body>
+    <% include partials/template/header.ejs %>
+	<section class="layout">
+		<div class="primary">
+			<h4>Compart&iacute tu momento</h4>
+			<% include partials/content/upload_form.ejs %>
+		</div>
+		<div class="primary">
+				<h1>Archivos Subidos</h1>
+				<% include partials/content/uploaded_pictures.ejs %>
+		</div>
+	</section>	
+	<% include partials/template/footer.ejs %>
+	<% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<p> <%= message %> </p>
+<p>Presiona el bot&oacuten para elegir el archivo y luego el bot&oacuten subir para compartir tu foto: </p>
+<form action="/upload" method="post" enctype="multipart/form-data" >
+	<input type="file" name="uploadedFile" id="uploadedFile"  accept="image/*" />
+	<div class="new_Btn">Elegir Im&aacutegen</div><br>
+	<div id="selectedFile" name="selectedFile" >No hay ning&uacuten archivo seleccionado.</div><br>
+	<img id="preview" src="" width="200" style="display:none;" /><br>
+	<input type="submit" value="Subir" name="submit" id="submit" /><br>
+</form>

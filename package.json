@@ -6,11 +6,13 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "express": "*",
-    "body-parser": "*",
+    "body-parser": "*",=
     "cookie-parser": "*",
-    "morgan": "*",
     "debug": "*",
-    "ejs": "~0.8.5"
+    "ejs": "~0.8.5",
+    "express": "*",
+    "fs-extra": "*",
+    "morgan": "*",
+    "multer": "^0.1.4"
   }
 }

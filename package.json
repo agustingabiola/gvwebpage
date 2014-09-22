@@ -9,7 +9,7 @@
     "body-parser": "*",=
     "cookie-parser": "*",
     "debug": "*",
-    "ejs": "~0.8.5",
+    "ejs": "*",
     "express": "*",
     "fs-extra": "*",
     "morgan": "*",

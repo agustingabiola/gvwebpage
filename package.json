@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "*",=
+    "body-parser": "*",
     "cookie-parser": "*",
     "debug": "*",
     "ejs": "*",

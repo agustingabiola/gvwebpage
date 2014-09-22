@@ -13,6 +13,6 @@
     "express": "*",
     "fs-extra": "*",
     "morgan": "*",
-    "multer": "^0.1.4"
+    "multer": "*"
   }
 }

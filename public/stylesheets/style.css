@@ -268,9 +268,12 @@ img.errorimg {
 }
 
 header img {
+  padding-bottom: 50px;
+  vertical-align: middle;
   max-width: 100%;
   margin-top: 10px;
 }
+
 header .hero {
   width: 100%;
 }
@@ -438,7 +441,7 @@ header .navigation ul.nav li:hover a {
 }
  
 @media (max-width: 47em) {
-  .home .speakerslist {
+  .speakerslist {
     display: none;
   }
 }
@@ -473,7 +476,8 @@ header .navigation ul.nav li:hover a {
   header .navigation ul.nav li.last {
     padding-right: 0;
   }
-  
+}
+
   #uploadedFile {
 	display: none;
   }
@@ -516,4 +520,3 @@ header .navigation ul.nav li:hover a {
     background:red;
     box-shadow: 0px 0px 1px #777;
   }
-}
